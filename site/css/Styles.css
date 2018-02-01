@@ -159,7 +159,38 @@ body {
   margin-top: 25px;
 }
 /* END FOOTER */
+
 /* End Home Page */
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
 
 /**** Large device only  ****/
 @media (min-width: 1200px) {
@@ -207,7 +238,7 @@ body {
         padding-top: 10px;
         font-size: 5vw;  /* 1vw = 1% of viewport width */
     }
-    .navbar-brand p {   /* Kosher certificate */
+    .navbar-brand p {   /* Kcertificate */
        text-transform: uppercase;
         font-size: .6em;
         margin-top: 12px;
@@ -248,6 +279,20 @@ body {
     width: 360px;
     margin: 0 auto 15px;
   }
+    
+    /* FOOTER */
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0; /* Margin already exist on the whole row */
+    }
+    .panel-footer section hr {
+        width: 50%;
+    }
+    
+    /* End Footer */
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
