@@ -10,7 +10,7 @@
 // See Lecture 52, part 1
 (function(window) {
 var byeSpeaker = {};
-    byeSpeaker.speak = function() {
+    byeSpeaker.speak = function(name) {
         console.log(speakWord + " " + name);
     }
 
